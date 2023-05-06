@@ -1,0 +1,20 @@
+.searcher--input {
+  width: 28vw;
+  max-width: 1440px;
+  background-color: transparent;
+  border: solid 2px gray;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: #1F1F1F;
+  font-size: medium;
+  outline: none;
+}
+
+.searcher--input:focus {
+  background-color: #fff;
+}
+
+.extended-options-state--input {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
