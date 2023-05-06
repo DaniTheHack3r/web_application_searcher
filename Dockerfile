@@ -13,9 +13,9 @@ FROM node:18.16-alpine3.17 as runner
 
 ENV NODE_ENV=production
 
-## Copy artifacts from previous layer
 ADD ./proxy-server /app/proxy-server
 
+## Copy artifacts from previous layer
 COPY --from=builder /app/dist /app/dist
 COPY --from=builder /app/package.json /app
 COPY --from=builder /app/package-lock.json /app
