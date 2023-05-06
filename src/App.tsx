@@ -4,6 +4,10 @@ import { useAutocompletion } from './hooks/useAutocompletion';
 import { AutocompletionOptions } from './components/AutoCompletionOptions';
 import './App.css';
 
+/* The styles in the other components are declared as css and not css modules. 
+ * This is not an issue in this case, but for bigger projects is recommmeded to use css modules.
+ */
+
 export const App = () => {
   const [searchValue, setSearchValue] = useState('');
   const [isInputFocused, setIsInputFocused] = useState(false);
@@ -13,7 +17,7 @@ export const App = () => {
    * For this case I made an api provider capable of making requests called src/services/apiServiceProvider.ts and a
    * hook called src/hooks/useAutocompletion.ts that sends the searchValue as a demostration of a correct way to leave
    * this responsability to the backend.
-  */
+   */
 
   const {autocompleteOptions} = useAutocompletion(searchValue);
 

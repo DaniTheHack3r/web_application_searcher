@@ -1,7 +1,6 @@
 {
   "name": "autocomplete-searcher",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config ./webpack.config.js --mode production",
@@ -10,7 +9,7 @@
     "start": "concurrently --kill-others \"npm run build:dev\" \"npm run initialize:server-mock\"",
     "server:up": "node ./proxy-server/proxy.js"
   },
-  "author": "",
+  "author": "Daniel Hernandez",
   "license": "ISC",
   "dependencies": {
     "express": "4.18.2",
